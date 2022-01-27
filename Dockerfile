@@ -6,7 +6,7 @@ RUN apk add --update --no-cache openjdk8-jre
 RUN gcloud components install cloud-datastore-emulator beta --quiet
 
 ENV PORT 8080
-ENV FIRESTORE_PROJECT_ID "dummy-datastore-id"
+ENV DATASTORE_PROJECT_ID "dummy-datastore-id"
 
 COPY entrypoint.sh /app/bin/entrypoint.sh
 

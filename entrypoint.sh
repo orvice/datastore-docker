@@ -3,7 +3,7 @@
 set -xe
 
 # Config gcloud project
-gcloud config set project "${FIRESTORE_PROJECT_ID}"
+gcloud config set project "${DATASTORE_PROJECT_ID}"
 
 # Start emulator
 gcloud beta emulators datastore start \
